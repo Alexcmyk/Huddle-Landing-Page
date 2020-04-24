@@ -145,6 +145,7 @@ header .container .cta_header:hover {
   background-size: cover;
   background-position: right center;
   padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .hero .container {
@@ -199,5 +200,75 @@ header .container .cta_header:hover {
 
 .hero img {
   max-width: 60%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .grow .container,
+main .flow .container,
+main .users .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+  padding: 70px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+  font-family: "Open Sans", sans-serif;
+}
+
+main .grow .container img,
+main .flow .container img,
+main .users .container img {
+  max-width: 45%;
+}
+
+main .grow .container .reverse,
+main .flow .container .reverse,
+main .users .container .reverse {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+main .grow .container .info,
+main .flow .container .info,
+main .users .container .info {
+  padding: 40px;
+  max-width: 45%;
+}
+
+main .grow .container .info h2,
+main .flow .container .info h2,
+main .users .container .info h2 {
+  font-size: 27px;
+  color: #00252e;
+}
+
+main .grow .container .info p,
+main .flow .container .info p,
+main .users .container .info p {
+  margin-top: 30px;
+  color: #808d99;
+  font-size: 15px;
+  line-height: 2;
 }
 /*# sourceMappingURL=main.css.map */

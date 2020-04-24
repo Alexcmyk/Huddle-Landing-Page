@@ -1,0 +1,53 @@
+main {
+
+    display: flex;
+    flex-direction: column;
+
+    .container {
+        display: flex;
+        
+    }
+
+    .grow .container, 
+    .flow .container,
+    .users .container {
+
+        img {
+            max-width: 45%;
+        }
+
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 80px;
+        padding: 70px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+        font-family: $bodyFont,sans-serif;
+
+        .reverse {
+            order: 1;
+        }
+
+        .info {
+
+            padding: 40px;
+
+            h2 {
+                font-size: 27px;
+                color: $headerColor;
+            }
+
+            p {
+                margin-top: 30px;
+                color: $secondaryText;
+                font-size: 15px;
+                line-height: 2;
+            }
+
+            max-width: 45%;
+        }
+
+    }
+    
+
+}
