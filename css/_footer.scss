@@ -1,7 +1,53 @@
 
 footer {
-    margin-top: 150px;
+    margin-top: 250px;
     background-color: $headerColor;
     padding-top: 160px;
-    padding-bottom: 160px;
+    padding-bottom: 80px;
+    color:#fff;
+    font-family: $bodyFont;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    .child {
+        flex: 1 0 25%;
+        // margin: 5px;
+        border: 1px red solid;
+        padding: 10px;
+        margin-bottom: 10px;
+
+    
+        
+
+        img {
+            max-width: 170px;
+        }
+
+        a {
+            color: #fff;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 13px;
+            margin: 10px 0; 
+        }
+
+    }
+
+    .container ul:nth-child(4) {
+        display: flex;
+
+        li {
+            padding-right: 10px;
+        }
+
+    }
+
 }

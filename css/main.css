@@ -100,6 +100,10 @@ body {
   padding: 25px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 header {
   position: absolute;
   width: 100vw;
@@ -210,6 +214,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 main .container {
@@ -253,7 +258,7 @@ main .grow .container .info,
 main .flow .container .info,
 main .users .container .info {
   padding: 40px;
-  max-width: 45%;
+  max-width: 50%;
 }
 
 main .grow .container .info h2,
@@ -272,36 +277,174 @@ main .users .container .info p {
   line-height: 2;
 }
 
-main .cta .container {
-  position: absolute;
-  z-index: 2;
-  left: 50%;
-  -webkit-transform: translateX(-220px);
-          transform: translateX(-220px);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+main .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .cta .cta_info {
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px red solid;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  max-width: 50%;
+  position: absolute;
+  margin-top: 120px;
+  padding: 50px 120px;
   border-radius: 10px;
-  padding: 70px;
-  background-color: #fff;
+  background: #fff;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
+}
+
+main .cta .cta_info h2 {
+  font-size: 26px;
+}
+
+main .cta .cta_info a {
+  background-color: #ff52bf;
+  display: inline-block;
+  margin-top: 40px;
+  padding: 15px 60px;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  -webkit-box-shadow: 0px 3px 8px rgba(255, 32, 225, 0.452);
+          box-shadow: 0px 3px 8px rgba(255, 32, 225, 0.452);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+main .cta .cta_info a:hover {
+  background-color: #ed129d;
 }
 
 footer {
-  margin-top: 150px;
+  margin-top: 250px;
   background-color: #00252e;
   padding-top: 160px;
-  padding-bottom: 160px;
+  padding-bottom: 80px;
+  color: #fff;
+  font-family: "Open Sans";
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  border: 1px red solid;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+footer .child img {
+  max-width: 170px;
+}
+
+footer .child a {
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+}
+
+footer .child p {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+footer .container ul:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container ul:nth-child(4) li {
+  padding-right: 10px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 40px;
+  }
+  .hero img {
+    width: 400px;
+  }
+  .hero .hero_info h1 {
+    font-size: 28px;
+  }
+  main .grow .container,
+  main .flow .container,
+  main .users .container {
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .container img {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  .hero .container .hero_info {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .hero .container .hero_info h1 {
+    max-width: 100%;
+  }
+  main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  main .grow .container .info,
+  main .users .container .info {
+    max-width: 90%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main .flow .container .info {
+    max-width: 90%;
+  }
+  main .cta .cta_info {
+    padding: 50px 50px;
+  }
+  main .cta .cta_info h2 {
+    font-size: 20px;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

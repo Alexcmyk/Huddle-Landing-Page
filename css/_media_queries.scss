@@ -1,0 +1,90 @@
+
+
+@media (max-width:1000px) {
+
+    .container {
+        padding: 40px;
+    }
+
+    .hero img {
+        width: 400px;
+    }
+
+    .hero .hero_info h1 {
+        font-size: 28px;
+    }
+
+    div .container {
+        
+    }
+
+    main .grow .container,
+    main .flow .container,
+    main .users .container {
+        padding: 0;
+        box-shadow: none;
+    }
+
+
+}
+
+@media (max-width: 860px) {
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        img {
+            margin-top: 40px;
+            max-width: 100%;
+        }
+
+        .hero_info {
+        max-width: 100%;
+        padding-right: 0;
+
+            h1 {
+                max-width: 100%;
+            }
+
+        }
+    }
+
+    main .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .grow .container .info,
+    main .users .container .info
+     {
+        max-width: 90%;
+        order: 1;
+    }
+
+    main .flow .container .info {
+        max-width: 90%;
+    }
+
+    main .cta .cta_info {
+
+        h2 {
+            font-size: 20px;
+        }
+
+        padding: 50px 50px
+
+    }
+
+    footer .container {
+        flex-direction: column;
+        max-width: 100%;
+
+        
+    }
+
+
+
+
+}
