@@ -12,6 +12,10 @@ $headerColor: hsl(192, 100%, 9%);
 $secondaryText: hsl(208, 11%, 55%);
 $backgroundColor: hsl(193, 100%, 96%);
 
+//Hover Styles
+$mainButtonHover: hsl(322, 86%, 50%);
+$headerCtaHover:  hsl(0, 0%, 96%);
+
 
 // HTML 5 Reset 
 
@@ -45,11 +49,8 @@ font-size: 18px;
 line-height: 1.5;
 }
 
-// .wrapper {
-
-// }
-
-h1 {
-    color: green;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
 }
-

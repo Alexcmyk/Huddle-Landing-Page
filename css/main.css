@@ -94,7 +94,110 @@ body {
   line-height: 1.5;
 }
 
-h1 {
-  color: green;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+header {
+  position: absolute;
+  width: 100vw;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header_logo img {
+  width: 170px;
+}
+
+header .container .cta_header {
+  color: #00252e;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  padding: 13px 60px;
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.144);
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.144);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header .container .cta_header:hover {
+  background-color: whitesmoke;
+}
+
+.hero {
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-color: #ebfbff;
+  background-size: cover;
+  background-position: right center;
+  padding-top: 120px;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .hero_info {
+  max-width: 40%;
+  padding-right: 60px;
+}
+
+.hero .hero_info h1 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-size: 32px;
+  max-width: 380px;
+}
+
+.hero .hero_info p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #808d99;
+}
+
+.hero .hero_info .cta_hero {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 15px 60px;
+  background-color: #ff52bf;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  -webkit-box-shadow: 0px 3px 8px rgba(255, 32, 225, 0.452);
+          box-shadow: 0px 3px 8px rgba(255, 32, 225, 0.452);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero .hero_info .cta_hero:hover {
+  background-color: #ed129d;
+}
+
+.hero img {
+  max-width: 60%;
 }
 /*# sourceMappingURL=main.css.map */
