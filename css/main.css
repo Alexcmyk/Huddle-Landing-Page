@@ -341,11 +341,14 @@ footer .container {
           justify-content: space-between;
 }
 
+footer .container .child:nth-child(1) {
+  margin-right: 100px;
+}
+
 footer .child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%;
-  border: 1px red solid;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
   padding: 10px;
   margin-bottom: 10px;
 }

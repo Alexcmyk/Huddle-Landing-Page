@@ -12,10 +12,15 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         
+        
+    }
+
+    .container .child:nth-child(1) {
+        margin-right: 100px;
     }
 
     .child {
-        flex: 1 0 25%;
+        flex: 1 0 20%;
         padding: 10px;
         margin-bottom: 10px;
 
