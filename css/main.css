@@ -368,6 +368,10 @@ footer .child p {
   margin: 10px 0;
 }
 
+footer .child .fab {
+  font-size: 20px;
+}
+
 footer .container ul:nth-child(4) {
   display: -webkit-box;
   display: -ms-flexbox;
